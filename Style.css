@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --orange: #FF5300;
+    --light-orange: #FFF7F4;
+    --black: #373737;
+    --gray: #7B7B7B;
+    --white: #ffffff;
+    --work-sans: "Work Sans", sans-serif;
+}
+
+h1{
+    font-family: "work sans", var(--work-sans);
+    font-size:48px;
+    line-height: 1.3;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: "work sans", var(--work-sans);
+    font-size:40px;
+}
+
+h3{
+    font-family: "work sans", var(--work-sans);
+    font-size:30px;
+}
+
+p{
+    font-family: "work sans", var(--work-sans);
+    font-size:16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--gray);
+    margin-bottom: 50px;
+}
+
+body{
+    font-family: "work sans", var(--work-sans);
+    line-height: 1.3;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+/* Header Start  */
+
+.header{
+    background-color: var(--light-orange);
+    padding: 30px 0px 30px 0px;
+}
+
+.header .container.flex {
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: "work sans", var(--work-sans);
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0px;
+    padding: 0px;
+}
+.logo span{
+    color: var(--orange);
+}
+.logo a{
+    color: var(--black);
+}
+
+.nav{
+    
+}
+
+.nav li {
+    list-style: none;
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    font-family: "work sans", var(--work-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    transition: 0.3s ease;
+}
+.nav li:hover{
+    color: var(--orange);
+}
+.nav li.active{
+    color: var(--orange);
+}
+
+.hamburger{
+        display: none;
+    }
+
+.btn{
+    cursor: pointer;
+    font-family: "work sans", var(--work-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    margin-left: 50px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
+    background-color: transparent;
+    transition: 0.3s ease;
+    flex: end;   
+}
+
+.btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    border: 1px solid var(--orange);
+}
+
+.btn2{
+    cursor: pointer;
+    font-family: "work sans", var(--work-sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border-radius: 5px;
+    padding: 15px 20px 15px 20px;
+    background-color: var(--orange);
+    transition: 0.3s ease;
+    border: none;
+    box-shadow: 4px 5px 15px #ff530040;
+}
+
+.btn2:hover{
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 4px 5px 15px #37373740;
+}
+
+
+/* Banner section Start */
+
+.banner{
+    height: auto;
+    background-color: var(--light-orange);
+    padding: 100px 0px 120px 0px;
+}
+
+.banner .container.flex{
+    justify-content: center;
+    align-items: center;
+}
+.spot{
+    padding-right: 220px;
+}
+
+.hero{
+    
+}
+.hero img{
+    width: 650px;
+    height: auto;
+}
+.service{
+    height: 600px;
+    background-color: var(--white);
+}
+
+@media screen and (max-width:768px){ 
+    .header{
+        padding: 20px 15px 20px 15px;
+    }
+    .nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        margin-top: 15px;
+    }
+    .hamburger input{
+    display: none;
+    }
+
+    i.fa-xmark{
+        display: none;
+    }
+    
+    #menu:checked ~ label .fa-xmark{ 
+        display: block;
+    }
+
+    #menu:checked ~ label .fa-bars{ 
+        display: none;
+    }
+    
+    #menu:checked ~ .vnav { 
+        right: 0px;
+        transition: 0.3s ease;
+        
+    }
+    
+    .vnav{
+        position:fixed;
+        right:-150px;
+        overflow: hidden;
+        background-color: var(--light-orange);
+        padding: 20px;
+    }
+    
+    .vnav li {
+    list-style: none;
+    cursor: pointer;
+    font-family: "work sans", var(--work-sans);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    transition: 0.3s ease;
+    margin-bottom: 5px;
+    }
+    .vnav li:hover{
+    color: var(--orange);
+    }
+    .vnav li.active{
+    color: var(--orange);
+    }
+    
+    }
+
+
+@media screen and (max-width:767px){
+    /* phones */
+
+  
+    
+}
+
+@media (min-width:768px) and (max-width:1023px){
+/* ipad */
+}
+
+@media (min-width:1024px) and (max-width:1199px){
+/* ipad-pro */
+}
+
+@media screen and (min-width:1200px){
+/* desktop */
+
+     
+}
+
