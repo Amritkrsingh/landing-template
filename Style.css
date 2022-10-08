@@ -60,6 +60,7 @@ body{
     width: 100%;
     max-width: 1440px;
     margin: 0px auto;
+    padding: 0px 40px;
 }
 
 .flex{
@@ -176,7 +177,7 @@ a{
     align-items: center;
 }
 .spot{
-    padding-right: 220px;
+    padding-right: 160px;
 }
 .spot p{
     margin-bottom: 50px;
@@ -236,7 +237,7 @@ a{
 
 .box{
     height: auto;
-    width: 32%;
+    width: 31%;
     padding: 30px;
     box-shadow: 0px 2px 4px 0px #dfdfdf;
     border-radius: 10PX;
@@ -963,7 +964,7 @@ i.fa-xmark{
     
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     justify-items: center;
 }
 .item {
@@ -971,6 +972,37 @@ i.fa-xmark{
     width: 100%;
 }
     
+    
+.review-section {
+    padding: 50px 15px;
+    }
+    
+.slider{
+        flex-direction: column;
+    }
+    
+.review-box{
+        width: 100%;
+    }
+    
+.review-text h3{
+       font-size: 20px; 
+    }
+    
+.letf-arrow, .right-arrow{
+        display: none;
+    }
+    
+    
+.footer-1{
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 15px;
+    }
+    
+.branded-footer {
+    padding: 20px 15px;
+}
     
 .line::before {
     content: "";
@@ -991,8 +1023,22 @@ i.fa-xmark{
     right: 10%;
     top: 13px;
 }
-    
-    
+.container{
+        padding: 0px;
+    margin: 0px;
+    }
+.review-box:after {
+    content: '\f10e';
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 40px;
+    color: #ccc;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+}
     
     }
 
