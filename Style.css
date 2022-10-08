@@ -688,7 +688,7 @@ i.fa-solid.fa-star{
     color:var(--white);
 }
 
-.footer-1 a:hover{
+.footer-1 .f2 a:hover{
     color: var(--orange);
 }
 
